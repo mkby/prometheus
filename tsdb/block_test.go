@@ -30,12 +30,12 @@ import (
 	"github.com/go-kit/log"
 	"github.com/stretchr/testify/require"
 
-	"github.com/prometheus/prometheus/pkg/labels"
-	"github.com/prometheus/prometheus/storage"
-	"github.com/prometheus/prometheus/tsdb/chunks"
-	"github.com/prometheus/prometheus/tsdb/fileutil"
-	"github.com/prometheus/prometheus/tsdb/tsdbutil"
-	"github.com/prometheus/prometheus/tsdb/wal"
+	"github.com/mkby/prometheus/pkg/labels"
+	"github.com/mkby/prometheus/storage"
+	"github.com/mkby/prometheus/tsdb/chunks"
+	"github.com/mkby/prometheus/tsdb/fileutil"
+	"github.com/mkby/prometheus/tsdb/tsdbutil"
+	"github.com/mkby/prometheus/tsdb/wal"
 )
 
 // In Prometheus 2.1.0 we had a bug where the meta.json version was falsely bumped

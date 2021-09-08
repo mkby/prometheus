@@ -28,13 +28,13 @@ import (
 	"github.com/oklog/ulid"
 	"github.com/pkg/errors"
 
-	"github.com/prometheus/prometheus/pkg/labels"
-	"github.com/prometheus/prometheus/tsdb/chunkenc"
-	"github.com/prometheus/prometheus/tsdb/chunks"
-	tsdb_errors "github.com/prometheus/prometheus/tsdb/errors"
-	"github.com/prometheus/prometheus/tsdb/fileutil"
-	"github.com/prometheus/prometheus/tsdb/index"
-	"github.com/prometheus/prometheus/tsdb/tombstones"
+	"github.com/mkby/prometheus/pkg/labels"
+	"github.com/mkby/prometheus/tsdb/chunkenc"
+	"github.com/mkby/prometheus/tsdb/chunks"
+	tsdb_errors "github.com/mkby/prometheus/tsdb/errors"
+	"github.com/mkby/prometheus/tsdb/fileutil"
+	"github.com/mkby/prometheus/tsdb/index"
+	"github.com/mkby/prometheus/tsdb/tombstones"
 )
 
 // IndexWriter serializes the index for a block of series data.

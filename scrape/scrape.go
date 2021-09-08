@@ -37,21 +37,21 @@ import (
 	"github.com/prometheus/common/model"
 	"github.com/prometheus/common/version"
 
-	"github.com/prometheus/prometheus/config"
-	"github.com/prometheus/prometheus/discovery/targetgroup"
-	"github.com/prometheus/prometheus/pkg/exemplar"
-	"github.com/prometheus/prometheus/pkg/labels"
-	"github.com/prometheus/prometheus/pkg/pool"
-	"github.com/prometheus/prometheus/pkg/relabel"
-	"github.com/prometheus/prometheus/pkg/textparse"
-	"github.com/prometheus/prometheus/pkg/timestamp"
-	"github.com/prometheus/prometheus/pkg/value"
-	"github.com/prometheus/prometheus/storage"
+	"github.com/mkby/prometheus/config"
+	"github.com/mkby/prometheus/discovery/targetgroup"
+	"github.com/mkby/prometheus/pkg/exemplar"
+	"github.com/mkby/prometheus/pkg/labels"
+	"github.com/mkby/prometheus/pkg/pool"
+	"github.com/mkby/prometheus/pkg/relabel"
+	"github.com/mkby/prometheus/pkg/textparse"
+	"github.com/mkby/prometheus/pkg/timestamp"
+	"github.com/mkby/prometheus/pkg/value"
+	"github.com/mkby/prometheus/storage"
 )
 
 // Temporary tolerance for scrape appends timestamps alignment, to enable better
 // compression at the TSDB level.
-// See https://github.com/prometheus/prometheus/issues/7846
+// See https://github.com/mkby/prometheus/issues/7846
 const scrapeTimestampTolerance = 2 * time.Millisecond
 
 // AlignScrapeTimestamps enables the tolerance for scrape appends timestamps described above.
@@ -1122,7 +1122,7 @@ mainLoop:
 
 		// Temporary workaround for a jitter in go timers that causes disk space
 		// increase in TSDB.
-		// See https://github.com/prometheus/prometheus/issues/7846
+		// See https://github.com/mkby/prometheus/issues/7846
 		// Calling Round ensures the time used is the wall clock, as otherwise .Sub
 		// and .Add on time.Time behave differently (see time package docs).
 		scrapeTime := time.Now().Round(0)

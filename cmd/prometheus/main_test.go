@@ -30,9 +30,9 @@ import (
 	"github.com/prometheus/common/model"
 	"github.com/stretchr/testify/require"
 
-	"github.com/prometheus/prometheus/notifier"
-	"github.com/prometheus/prometheus/pkg/labels"
-	"github.com/prometheus/prometheus/rules"
+	"github.com/mkby/prometheus/notifier"
+	"github.com/mkby/prometheus/pkg/labels"
+	"github.com/mkby/prometheus/rules"
 )
 
 var promPath = os.Args[0]

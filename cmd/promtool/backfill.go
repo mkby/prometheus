@@ -21,10 +21,10 @@ import (
 
 	"github.com/go-kit/log"
 	"github.com/pkg/errors"
-	"github.com/prometheus/prometheus/pkg/labels"
-	"github.com/prometheus/prometheus/pkg/textparse"
-	"github.com/prometheus/prometheus/tsdb"
-	tsdb_errors "github.com/prometheus/prometheus/tsdb/errors"
+	"github.com/mkby/prometheus/pkg/labels"
+	"github.com/mkby/prometheus/pkg/textparse"
+	"github.com/mkby/prometheus/tsdb"
+	tsdb_errors "github.com/mkby/prometheus/tsdb/errors"
 )
 
 func getMinAndMaxTimestamps(p textparse.Parser) (int64, int64, error) {

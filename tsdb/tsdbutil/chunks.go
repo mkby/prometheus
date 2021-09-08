@@ -14,8 +14,8 @@
 package tsdbutil
 
 import (
-	"github.com/prometheus/prometheus/tsdb/chunkenc"
-	"github.com/prometheus/prometheus/tsdb/chunks"
+	"github.com/mkby/prometheus/tsdb/chunkenc"
+	"github.com/mkby/prometheus/tsdb/chunks"
 )
 
 type Samples interface {

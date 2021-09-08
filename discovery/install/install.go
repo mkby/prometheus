@@ -16,23 +16,23 @@
 package install
 
 import (
-	_ "github.com/prometheus/prometheus/discovery/aws"          // register aws
-	_ "github.com/prometheus/prometheus/discovery/azure"        // register azure
-	_ "github.com/prometheus/prometheus/discovery/consul"       // register consul
-	_ "github.com/prometheus/prometheus/discovery/digitalocean" // register digitalocean
-	_ "github.com/prometheus/prometheus/discovery/dns"          // register dns
-	_ "github.com/prometheus/prometheus/discovery/eureka"       // register eureka
-	_ "github.com/prometheus/prometheus/discovery/file"         // register file
-	_ "github.com/prometheus/prometheus/discovery/gce"          // register gce
-	_ "github.com/prometheus/prometheus/discovery/hetzner"      // register hetzner
-	_ "github.com/prometheus/prometheus/discovery/http"         // register http
-	_ "github.com/prometheus/prometheus/discovery/kubernetes"   // register kubernetes
-	_ "github.com/prometheus/prometheus/discovery/linode"       // register linode
-	_ "github.com/prometheus/prometheus/discovery/marathon"     // register marathon
-	_ "github.com/prometheus/prometheus/discovery/moby"         // register moby
-	_ "github.com/prometheus/prometheus/discovery/openstack"    // register openstack
-	_ "github.com/prometheus/prometheus/discovery/scaleway"     // register scaleway
-	_ "github.com/prometheus/prometheus/discovery/triton"       // register triton
-	_ "github.com/prometheus/prometheus/discovery/xds"          // register xds
-	_ "github.com/prometheus/prometheus/discovery/zookeeper"    // register zookeeper
+	_ "github.com/mkby/prometheus/discovery/aws"          // register aws
+	_ "github.com/mkby/prometheus/discovery/azure"        // register azure
+	_ "github.com/mkby/prometheus/discovery/consul"       // register consul
+	_ "github.com/mkby/prometheus/discovery/digitalocean" // register digitalocean
+	_ "github.com/mkby/prometheus/discovery/dns"          // register dns
+	_ "github.com/mkby/prometheus/discovery/eureka"       // register eureka
+	_ "github.com/mkby/prometheus/discovery/file"         // register file
+	_ "github.com/mkby/prometheus/discovery/gce"          // register gce
+	_ "github.com/mkby/prometheus/discovery/hetzner"      // register hetzner
+	_ "github.com/mkby/prometheus/discovery/http"         // register http
+	_ "github.com/mkby/prometheus/discovery/kubernetes"   // register kubernetes
+	_ "github.com/mkby/prometheus/discovery/linode"       // register linode
+	_ "github.com/mkby/prometheus/discovery/marathon"     // register marathon
+	_ "github.com/mkby/prometheus/discovery/moby"         // register moby
+	_ "github.com/mkby/prometheus/discovery/openstack"    // register openstack
+	_ "github.com/mkby/prometheus/discovery/scaleway"     // register scaleway
+	_ "github.com/mkby/prometheus/discovery/triton"       // register triton
+	_ "github.com/mkby/prometheus/discovery/xds"          // register xds
+	_ "github.com/mkby/prometheus/discovery/zookeeper"    // register zookeeper
 )

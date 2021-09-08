@@ -22,11 +22,11 @@ import (
 	"github.com/go-kit/log/level"
 
 	"github.com/prometheus/client_golang/prometheus"
-	"github.com/prometheus/prometheus/config"
-	"github.com/prometheus/prometheus/pkg/gate"
-	"github.com/prometheus/prometheus/pkg/labels"
-	"github.com/prometheus/prometheus/prompb"
-	"github.com/prometheus/prometheus/storage"
+	"github.com/mkby/prometheus/config"
+	"github.com/mkby/prometheus/pkg/gate"
+	"github.com/mkby/prometheus/pkg/labels"
+	"github.com/mkby/prometheus/prompb"
+	"github.com/mkby/prometheus/storage"
 )
 
 type readHandler struct {

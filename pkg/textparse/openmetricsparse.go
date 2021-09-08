@@ -27,9 +27,9 @@ import (
 
 	"github.com/pkg/errors"
 
-	"github.com/prometheus/prometheus/pkg/exemplar"
-	"github.com/prometheus/prometheus/pkg/labels"
-	"github.com/prometheus/prometheus/pkg/value"
+	"github.com/mkby/prometheus/pkg/exemplar"
+	"github.com/mkby/prometheus/pkg/labels"
+	"github.com/mkby/prometheus/pkg/value"
 )
 
 var allowedSuffixes = [][]byte{[]byte("_total"), []byte("_bucket")}

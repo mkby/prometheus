@@ -23,10 +23,10 @@ import (
 
 	"github.com/pkg/errors"
 
-	"github.com/prometheus/prometheus/pkg/labels"
-	"github.com/prometheus/prometheus/tsdb/chunkenc"
-	"github.com/prometheus/prometheus/tsdb/chunks"
-	tsdb_errors "github.com/prometheus/prometheus/tsdb/errors"
+	"github.com/mkby/prometheus/pkg/labels"
+	"github.com/mkby/prometheus/tsdb/chunkenc"
+	"github.com/mkby/prometheus/tsdb/chunks"
+	tsdb_errors "github.com/mkby/prometheus/tsdb/errors"
 )
 
 type mergeGenericQuerier struct {

@@ -17,9 +17,9 @@ import (
 	"context"
 	"math/rand"
 
-	"github.com/prometheus/prometheus/pkg/exemplar"
-	"github.com/prometheus/prometheus/pkg/labels"
-	"github.com/prometheus/prometheus/storage"
+	"github.com/mkby/prometheus/pkg/exemplar"
+	"github.com/mkby/prometheus/pkg/labels"
+	"github.com/mkby/prometheus/storage"
 )
 
 type nopAppendable struct{}

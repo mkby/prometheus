@@ -16,7 +16,7 @@ package storage
 import (
 	"sync"
 
-	"github.com/prometheus/prometheus/pkg/labels"
+	"github.com/mkby/prometheus/pkg/labels"
 )
 
 // secondaryQuerier is a wrapper that allows a querier to be treated in a best effort manner.

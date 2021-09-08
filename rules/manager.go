@@ -29,13 +29,13 @@ import (
 	"github.com/prometheus/client_golang/prometheus"
 	"github.com/prometheus/common/model"
 
-	"github.com/prometheus/prometheus/pkg/labels"
-	"github.com/prometheus/prometheus/pkg/rulefmt"
-	"github.com/prometheus/prometheus/pkg/timestamp"
-	"github.com/prometheus/prometheus/pkg/value"
-	"github.com/prometheus/prometheus/promql"
-	"github.com/prometheus/prometheus/promql/parser"
-	"github.com/prometheus/prometheus/storage"
+	"github.com/mkby/prometheus/pkg/labels"
+	"github.com/mkby/prometheus/pkg/rulefmt"
+	"github.com/mkby/prometheus/pkg/timestamp"
+	"github.com/mkby/prometheus/pkg/value"
+	"github.com/mkby/prometheus/promql"
+	"github.com/mkby/prometheus/promql/parser"
+	"github.com/mkby/prometheus/storage"
 )
 
 // RuleHealth describes the health state of a rule.

@@ -23,10 +23,10 @@ import (
 	"testing"
 
 	"github.com/go-kit/log"
-	"github.com/prometheus/prometheus/pkg/exemplar"
-	"github.com/prometheus/prometheus/pkg/labels"
-	"github.com/prometheus/prometheus/prompb"
-	"github.com/prometheus/prometheus/storage"
+	"github.com/mkby/prometheus/pkg/exemplar"
+	"github.com/mkby/prometheus/pkg/labels"
+	"github.com/mkby/prometheus/prompb"
+	"github.com/mkby/prometheus/storage"
 	"github.com/stretchr/testify/require"
 )
 

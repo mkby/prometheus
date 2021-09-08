@@ -40,21 +40,21 @@ import (
 	"github.com/stretchr/testify/require"
 	"go.uber.org/goleak"
 
-	"github.com/prometheus/prometheus/pkg/labels"
-	"github.com/prometheus/prometheus/storage"
-	"github.com/prometheus/prometheus/tsdb/chunkenc"
-	"github.com/prometheus/prometheus/tsdb/chunks"
-	"github.com/prometheus/prometheus/tsdb/fileutil"
-	"github.com/prometheus/prometheus/tsdb/index"
-	"github.com/prometheus/prometheus/tsdb/record"
-	"github.com/prometheus/prometheus/tsdb/tombstones"
-	"github.com/prometheus/prometheus/tsdb/tsdbutil"
-	"github.com/prometheus/prometheus/tsdb/wal"
-	"github.com/prometheus/prometheus/util/testutil"
+	"github.com/mkby/prometheus/pkg/labels"
+	"github.com/mkby/prometheus/storage"
+	"github.com/mkby/prometheus/tsdb/chunkenc"
+	"github.com/mkby/prometheus/tsdb/chunks"
+	"github.com/mkby/prometheus/tsdb/fileutil"
+	"github.com/mkby/prometheus/tsdb/index"
+	"github.com/mkby/prometheus/tsdb/record"
+	"github.com/mkby/prometheus/tsdb/tombstones"
+	"github.com/mkby/prometheus/tsdb/tsdbutil"
+	"github.com/mkby/prometheus/tsdb/wal"
+	"github.com/mkby/prometheus/util/testutil"
 )
 
 func TestMain(m *testing.M) {
-	goleak.VerifyTestMain(m, goleak.IgnoreTopFunction("github.com/prometheus/prometheus/tsdb.(*SegmentWAL).cut.func2"))
+	goleak.VerifyTestMain(m, goleak.IgnoreTopFunction("github.com/mkby/prometheus/tsdb.(*SegmentWAL).cut.func2"))
 }
 
 func openTestDB(t testing.TB, opts *Options, rngs []int64) (db *DB) {
@@ -196,7 +196,7 @@ func TestDataAvailableOnlyAfterCommit(t *testing.T) {
 }
 
 // TestNoPanicAfterWALCorruption ensures that querying the db after a WAL corruption doesn't cause a panic.
-// https://github.com/prometheus/prometheus/issues/7548
+// https://github.com/mkby/prometheus/issues/7548
 func TestNoPanicAfterWALCorruption(t *testing.T) {
 	db := openTestDB(t, &Options{WALSegmentSize: 32 * 1024}, nil)
 
@@ -607,7 +607,7 @@ func TestDB_Snapshot(t *testing.T) {
 
 // TestDB_Snapshot_ChunksOutsideOfCompactedRange ensures that a snapshot removes chunks samples
 // that are outside the set block time range.
-// See https://github.com/prometheus/prometheus/issues/5105
+// See https://github.com/mkby/prometheus/issues/5105
 func TestDB_Snapshot_ChunksOutsideOfCompactedRange(t *testing.T) {
 	db := openTestDB(t, nil, nil)
 
@@ -2743,7 +2743,7 @@ func TestRangeForTimestamp(t *testing.T) {
 }
 
 // TestChunkReader_ConcurrentReads checks that the chunk result can be read concurrently.
-// Regression test for https://github.com/prometheus/prometheus/pull/6514.
+// Regression test for https://github.com/mkby/prometheus/pull/6514.
 func TestChunkReader_ConcurrentReads(t *testing.T) {
 	chks := []chunks.Meta{
 		tsdbutil.ChunkFromSamples([]tsdbutil.Sample{sample{1, 1}}),

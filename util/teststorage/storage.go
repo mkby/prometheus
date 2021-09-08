@@ -19,11 +19,11 @@ import (
 	"time"
 
 	"github.com/prometheus/client_golang/prometheus"
-	"github.com/prometheus/prometheus/pkg/exemplar"
-	"github.com/prometheus/prometheus/pkg/labels"
-	"github.com/prometheus/prometheus/storage"
-	"github.com/prometheus/prometheus/tsdb"
-	"github.com/prometheus/prometheus/util/testutil"
+	"github.com/mkby/prometheus/pkg/exemplar"
+	"github.com/mkby/prometheus/pkg/labels"
+	"github.com/mkby/prometheus/storage"
+	"github.com/mkby/prometheus/tsdb"
+	"github.com/mkby/prometheus/util/testutil"
 )
 
 // New returns a new TestStorage for testing purposes

@@ -43,13 +43,13 @@ import (
 	"gopkg.in/alecthomas/kingpin.v2"
 	yaml "gopkg.in/yaml.v2"
 
-	"github.com/prometheus/prometheus/config"
-	"github.com/prometheus/prometheus/discovery/file"
-	_ "github.com/prometheus/prometheus/discovery/install" // Register service discovery implementations.
-	"github.com/prometheus/prometheus/discovery/kubernetes"
-	"github.com/prometheus/prometheus/discovery/targetgroup"
-	"github.com/prometheus/prometheus/pkg/rulefmt"
-	"github.com/prometheus/prometheus/promql"
+	"github.com/mkby/prometheus/config"
+	"github.com/mkby/prometheus/discovery/file"
+	_ "github.com/mkby/prometheus/discovery/install" // Register service discovery implementations.
+	"github.com/mkby/prometheus/discovery/kubernetes"
+	"github.com/mkby/prometheus/discovery/targetgroup"
+	"github.com/mkby/prometheus/pkg/rulefmt"
+	"github.com/mkby/prometheus/promql"
 )
 
 func main() {

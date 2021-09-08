@@ -17,7 +17,7 @@ import (
 	"bufio"
 	"context"
 	"fmt"
-	"github.com/prometheus/prometheus/tsdb/index"
+	"github.com/mkby/prometheus/tsdb/index"
 	"io"
 	"io/ioutil"
 	"math"
@@ -36,11 +36,11 @@ import (
 	"github.com/go-kit/log"
 	"github.com/pkg/errors"
 
-	"github.com/prometheus/prometheus/pkg/labels"
-	"github.com/prometheus/prometheus/tsdb"
-	"github.com/prometheus/prometheus/tsdb/chunks"
-	tsdb_errors "github.com/prometheus/prometheus/tsdb/errors"
-	"github.com/prometheus/prometheus/tsdb/fileutil"
+	"github.com/mkby/prometheus/pkg/labels"
+	"github.com/mkby/prometheus/tsdb"
+	"github.com/mkby/prometheus/tsdb/chunks"
+	tsdb_errors "github.com/mkby/prometheus/tsdb/errors"
+	"github.com/mkby/prometheus/tsdb/fileutil"
 )
 
 const timeDelta = 30000

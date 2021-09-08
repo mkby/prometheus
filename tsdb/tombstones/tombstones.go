@@ -28,9 +28,9 @@ import (
 	"github.com/go-kit/log/level"
 	"github.com/pkg/errors"
 
-	"github.com/prometheus/prometheus/tsdb/encoding"
-	tsdb_errors "github.com/prometheus/prometheus/tsdb/errors"
-	"github.com/prometheus/prometheus/tsdb/fileutil"
+	"github.com/mkby/prometheus/tsdb/encoding"
+	tsdb_errors "github.com/mkby/prometheus/tsdb/errors"
+	"github.com/mkby/prometheus/tsdb/fileutil"
 )
 
 const TombstonesFilename = "tombstones"

@@ -28,11 +28,11 @@ import (
 	"github.com/stretchr/testify/require"
 	"go.uber.org/goleak"
 
-	"github.com/prometheus/prometheus/pkg/labels"
-	"github.com/prometheus/prometheus/tsdb/chunkenc"
-	"github.com/prometheus/prometheus/tsdb/chunks"
-	"github.com/prometheus/prometheus/tsdb/encoding"
-	"github.com/prometheus/prometheus/util/testutil"
+	"github.com/mkby/prometheus/pkg/labels"
+	"github.com/mkby/prometheus/tsdb/chunkenc"
+	"github.com/mkby/prometheus/tsdb/chunks"
+	"github.com/mkby/prometheus/tsdb/encoding"
+	"github.com/mkby/prometheus/util/testutil"
 )
 
 func TestMain(m *testing.M) {

@@ -27,10 +27,10 @@ import (
 	"github.com/pkg/errors"
 	"github.com/prometheus/common/model"
 
-	"github.com/prometheus/prometheus/discovery"
-	"github.com/prometheus/prometheus/discovery/targetgroup"
-	"github.com/prometheus/prometheus/util/strutil"
-	"github.com/prometheus/prometheus/util/treecache"
+	"github.com/mkby/prometheus/discovery"
+	"github.com/mkby/prometheus/discovery/targetgroup"
+	"github.com/mkby/prometheus/util/strutil"
+	"github.com/mkby/prometheus/util/treecache"
 )
 
 var (

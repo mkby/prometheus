@@ -26,11 +26,11 @@ import (
 	"github.com/prometheus/common/model"
 	"gopkg.in/yaml.v2"
 
-	"github.com/prometheus/prometheus/config"
-	"github.com/prometheus/prometheus/pkg/labels"
-	"github.com/prometheus/prometheus/pkg/logging"
-	"github.com/prometheus/prometheus/scrape"
-	"github.com/prometheus/prometheus/storage"
+	"github.com/mkby/prometheus/config"
+	"github.com/mkby/prometheus/pkg/labels"
+	"github.com/mkby/prometheus/pkg/logging"
+	"github.com/mkby/prometheus/scrape"
+	"github.com/mkby/prometheus/storage"
 )
 
 // String constants for instrumentation.

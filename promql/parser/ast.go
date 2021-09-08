@@ -19,8 +19,8 @@ import (
 
 	"github.com/pkg/errors"
 
-	"github.com/prometheus/prometheus/pkg/labels"
-	"github.com/prometheus/prometheus/storage"
+	"github.com/mkby/prometheus/pkg/labels"
+	"github.com/mkby/prometheus/storage"
 )
 
 // Node is a generic interface for all nodes in an AST.

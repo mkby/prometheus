@@ -26,8 +26,8 @@ import (
 	"github.com/pkg/errors"
 	"github.com/stretchr/testify/require"
 
-	"github.com/prometheus/prometheus/pkg/labels"
-	"github.com/prometheus/prometheus/tsdb/record"
+	"github.com/mkby/prometheus/pkg/labels"
+	"github.com/mkby/prometheus/tsdb/record"
 )
 
 func TestLastCheckpoint(t *testing.T) {

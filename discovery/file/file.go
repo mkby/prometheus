@@ -34,8 +34,8 @@ import (
 	fsnotify "gopkg.in/fsnotify/fsnotify.v1"
 	yaml "gopkg.in/yaml.v2"
 
-	"github.com/prometheus/prometheus/discovery"
-	"github.com/prometheus/prometheus/discovery/targetgroup"
+	"github.com/mkby/prometheus/discovery"
+	"github.com/mkby/prometheus/discovery/targetgroup"
 )
 
 var (

@@ -33,17 +33,17 @@ import (
 	"github.com/stretchr/testify/require"
 	"go.uber.org/atomic"
 
-	"github.com/prometheus/prometheus/config"
-	"github.com/prometheus/prometheus/pkg/exemplar"
-	"github.com/prometheus/prometheus/pkg/labels"
-	"github.com/prometheus/prometheus/storage"
-	"github.com/prometheus/prometheus/tsdb/chunkenc"
-	"github.com/prometheus/prometheus/tsdb/chunks"
-	"github.com/prometheus/prometheus/tsdb/index"
-	"github.com/prometheus/prometheus/tsdb/record"
-	"github.com/prometheus/prometheus/tsdb/tombstones"
-	"github.com/prometheus/prometheus/tsdb/tsdbutil"
-	"github.com/prometheus/prometheus/tsdb/wal"
+	"github.com/mkby/prometheus/config"
+	"github.com/mkby/prometheus/pkg/exemplar"
+	"github.com/mkby/prometheus/pkg/labels"
+	"github.com/mkby/prometheus/storage"
+	"github.com/mkby/prometheus/tsdb/chunkenc"
+	"github.com/mkby/prometheus/tsdb/chunks"
+	"github.com/mkby/prometheus/tsdb/index"
+	"github.com/mkby/prometheus/tsdb/record"
+	"github.com/mkby/prometheus/tsdb/tombstones"
+	"github.com/mkby/prometheus/tsdb/tsdbutil"
+	"github.com/mkby/prometheus/tsdb/wal"
 )
 
 func newTestHead(t testing.TB, chunkRange int64, compressWAL bool) (*Head, *wal.WAL) {
@@ -2249,7 +2249,7 @@ func TestMemSafeIteratorSeekIntoBuffer(t *testing.T) {
 	require.False(t, ok)
 }
 
-// Tests https://github.com/prometheus/prometheus/issues/8221.
+// Tests https://github.com/mkby/prometheus/issues/8221.
 func TestChunkNotFoundHeadGCRace(t *testing.T) {
 	db := newTestDB(t)
 	db.DisableCompactions()
@@ -2314,7 +2314,7 @@ func TestChunkNotFoundHeadGCRace(t *testing.T) {
 	wg.Wait()
 }
 
-// Tests https://github.com/prometheus/prometheus/issues/9079.
+// Tests https://github.com/mkby/prometheus/issues/9079.
 func TestDataMissingOnQueryDuringCompaction(t *testing.T) {
 	db := newTestDB(t)
 	db.DisableCompactions()

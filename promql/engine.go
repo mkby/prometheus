@@ -35,12 +35,12 @@ import (
 	"github.com/prometheus/common/model"
 	"github.com/uber/jaeger-client-go"
 
-	"github.com/prometheus/prometheus/pkg/labels"
-	"github.com/prometheus/prometheus/pkg/timestamp"
-	"github.com/prometheus/prometheus/pkg/value"
-	"github.com/prometheus/prometheus/promql/parser"
-	"github.com/prometheus/prometheus/storage"
-	"github.com/prometheus/prometheus/util/stats"
+	"github.com/mkby/prometheus/pkg/labels"
+	"github.com/mkby/prometheus/pkg/timestamp"
+	"github.com/mkby/prometheus/pkg/value"
+	"github.com/mkby/prometheus/promql/parser"
+	"github.com/mkby/prometheus/storage"
+	"github.com/mkby/prometheus/util/stats"
 )
 
 const (
@@ -144,7 +144,7 @@ type QueryOrigin struct{}
 
 // Statement implements the Query interface.
 // Calling this after Exec may result in panic,
-// see https://github.com/prometheus/prometheus/issues/8949.
+// see https://github.com/mkby/prometheus/issues/8949.
 func (q *query) Statement() parser.Statement {
 	return q.stmt
 }

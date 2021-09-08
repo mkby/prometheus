@@ -18,8 +18,8 @@ import (
 
 	"github.com/pkg/errors"
 
-	"github.com/prometheus/prometheus/pkg/labels"
-	"github.com/prometheus/prometheus/storage"
+	"github.com/mkby/prometheus/pkg/labels"
+	"github.com/mkby/prometheus/storage"
 )
 
 type sampleAndChunkQueryableClient struct {
@@ -207,13 +207,13 @@ func (q querier) addExternalLabels(ms []*labels.Matcher) ([]*labels.Matcher, lab
 
 // LabelValues implements storage.Querier and is a noop.
 func (q *querier) LabelValues(string, ...*labels.Matcher) ([]string, storage.Warnings, error) {
-	// TODO: Implement: https://github.com/prometheus/prometheus/issues/3351
+	// TODO: Implement: https://github.com/mkby/prometheus/issues/3351
 	return nil, nil, errors.New("not implemented")
 }
 
 // LabelNames implements storage.Querier and is a noop.
 func (q *querier) LabelNames(...*labels.Matcher) ([]string, storage.Warnings, error) {
-	// TODO: Implement: https://github.com/prometheus/prometheus/issues/3351
+	// TODO: Implement: https://github.com/mkby/prometheus/issues/3351
 	return nil, nil, errors.New("not implemented")
 }
 

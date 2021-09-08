@@ -30,13 +30,13 @@ import (
 
 	"github.com/prometheus/client_golang/prometheus"
 	"github.com/prometheus/common/model"
-	"github.com/prometheus/prometheus/config"
-	"github.com/prometheus/prometheus/pkg/labels"
-	"github.com/prometheus/prometheus/pkg/relabel"
-	"github.com/prometheus/prometheus/prompb"
-	"github.com/prometheus/prometheus/scrape"
-	"github.com/prometheus/prometheus/tsdb/record"
-	"github.com/prometheus/prometheus/tsdb/wal"
+	"github.com/mkby/prometheus/config"
+	"github.com/mkby/prometheus/pkg/labels"
+	"github.com/mkby/prometheus/pkg/relabel"
+	"github.com/mkby/prometheus/prompb"
+	"github.com/mkby/prometheus/scrape"
+	"github.com/mkby/prometheus/tsdb/record"
+	"github.com/mkby/prometheus/tsdb/wal"
 )
 
 const (
